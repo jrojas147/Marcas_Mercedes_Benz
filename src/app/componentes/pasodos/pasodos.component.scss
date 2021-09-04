@@ -44,7 +44,7 @@ div#check {
 }
 
 .contCampoDos{
-    
+
     @include tabletLaptop(){
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -52,18 +52,20 @@ div#check {
     }
 }
 
-.santanderConsumer{
-    @include tabletLaptop(){
-        display: grid;
-        grid-template-columns: 25% 65%;
-        text-align: justify;
-        grid-column-gap: 35px;
-
-        p{
-            @include tabletLaptop(){
-            font-size: 10px;
-            }
-        }
-    }
+.santanderFinancing{
+  @include tabletLaptop(){
+      display: grid;
+      grid-template-columns: 25% 65%;
+      text-align: justify;
+      grid-column-gap: 10px;
+      .centro{
+        align-items: center;
+        width: 130px;
+      }
+      p{
+          @include tabletLaptop(){
+          font-size: 10px;
+          }
+      }
+  }
 }
-
